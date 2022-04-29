@@ -1,0 +1,34 @@
+{
+  "name": "track-my-employee-mg",
+  "version": "1.0.0",
+  "description": "app used to track a company's team of employees",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "kill -9 $(lsof -ti:3000,3001) && npm start",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mgmckinn/track-my-employee-mg.git"
+  },
+  "author": "Mitchell McKinney",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "npm": "^8.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/mgmckinn/track-my-employee-mg/issues"
+  },
+  "homepage": "https://github.com/mgmckinn/track-my-employee-mg#readme",
+  "keywords": [
+    "mysql2"
+  ]
+}
