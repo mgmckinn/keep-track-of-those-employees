@@ -11,9 +11,9 @@ const viewByManager = () => {
             message: 'Which manager do you want to view?',
             choices: allManagers
         }])
-    })
-    .then((answers) => resolve (answers))
+        .then((answers) => resolve (answers))
     .catch((err) => reject (err))
+    })
 });
 
 }
